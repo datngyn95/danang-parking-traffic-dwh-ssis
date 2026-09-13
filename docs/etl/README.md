@@ -1,7 +1,6 @@
 # Bộ hướng dẫn triển khai ETL
 
-Tài liệu gốc về dữ liệu và mô hình: [`../../Agent.md`](../../Agent.md)  
-Checkpoint lịch sử: [`../../CHAT_HISTORY.md`](../../CHAT_HISTORY.md)
+Tài liệu gốc về dữ liệu và mô hình: [`../../Agent.md`](../../Agent.md)
 
 Mỗi đầu việc/package có một file riêng. Chỉ chuyển sang file kế tiếp khi tiêu chí nghiệm thu của file hiện tại đã đạt.
 

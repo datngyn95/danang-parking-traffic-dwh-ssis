@@ -32,7 +32,7 @@ số liệu chính thức của Thành phố Đà Nẵng.
 ├── ssis/       # Solution, project và các package SSIS
 ├── sql/        # Script tạo staging, transform, validation và reconciliation
 ├── docs/etl/   # Hướng dẫn triển khai từng package
-├── data/raw/   # Bộ dữ liệu portfolio/synthetic 7 ngày
+├── danang_smart_parking_raw_7d/ # Bộ dữ liệu portfolio/synthetic 7 ngày
 └── reports/    # Evidence đối soát baseline
 ```
 
@@ -50,7 +50,7 @@ RAW
 
 ## Bắt đầu
 
-1. Đọc [đặc tả dữ liệu và mô hình](docs/PROJECT_SPECIFICATION.md).
+1. Đọc [đặc tả dữ liệu và mô hình](Agent.md).
 2. Thực hiện các script và package theo [hướng dẫn ETL](docs/etl/README.md).
 3. Mở `ssis/DanangSmartParkingETL.sln` bằng Visual Studio có SSIS Projects.
 4. Cấu hình lại hai Connection Manager và project parameter theo môi trường.
@@ -59,4 +59,3 @@ RAW
 Không commit mật khẩu, connection string chứa credential, file `.ispac`, database
 backup hoặc cấu hình người dùng. Hai Connection Manager mẫu sử dụng Windows
 Integrated Security và cần được đổi server theo máy triển khai.
-
