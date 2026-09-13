@@ -1,0 +1,9 @@
+﻿source_id,filename,format,record_count,real_or_grounded_fields,synthetic_fields,purpose
+01,01_roads.geojson,GeoJSON,30,Real road names; official city population reference,Geometry/width/lanes/speed limit,Road master
+02,02_parking_locations.csv,CSV,20,166 Hải Phòng/255 Phan Châu Trinh capacities; known candidate addresses,Coordinates and many capacities,Parking supply master
+03,03_parking_restrictions.csv,CSV,18,3 restriction records from Da Nang open-data snippets,Remaining rules,Parking regulation master
+04,04_poi.geojson,GeoJSON,50,24 real POI names,Coordinates approximated; 26 synthetic POIs and demand weights,Demand drivers
+05,05_road_survey.csv,CSV,30,Real road names,All survey measurements,Road physical survey
+06,06_traffic_events.jsonl,JSON Lines,16884,City population and actual daily weather temperature calibration,All traffic observations,15-minute camera/sensor events
+07,07_parking_events.jsonl,JSON Lines,4300,Real road names and restriction references,All vehicle parking events,Roadside parking events
+08,08_weather_events.jsonl,JSON Lines,168,Daily min/max/reference temperature for 5-11 Aug 2026,"Hourly temperature interpolation, rain, humidity, wind, visibility",Hourly weather

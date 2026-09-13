@@ -1,0 +1,807 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="8/19/2026 1:29:16 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="EC2AMAZ-8A1DACA"
+  DTS:CreatorName="EC2AMAZ-8A1DACA\Administrator"
+  DTS:DTSID="{E9A19BB1-F87D-439F-82AD-C06633CB3A95}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="17.0.1016.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="00_Master"
+  DTS:PackageType="5"
+  DTS:VersionBuild="44"
+  DTS:VersionGUID="{0C427B6D-6EC5-4982-8391-8483C983400E}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F8EF2AD4-8897-464A-8BEC-0782D8E922DC}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="LoadBatchKey">
+      <DTS:VariableValue
+        DTS:DataType="20">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Extract GeoJSON"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{06378150-287f-4eb2-89a5-1f13a0b912c5}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Extract GeoJSON"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>11_Extract_GeoJSON.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Extract JSONL"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{ad6d974f-0c78-43c6-a488-ddd2f7ffbe5f}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Extract JSONL"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>12_Extract_JSONL.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Extract Master CSV"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{CACCF837-3B74-409D-818B-84AB55C3237D}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Extract Master CSV"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>10_Extract_MasterCSV.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Load Dimensions"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{C319BEC9-9B72-42FD-94AC-7CC455F9B225}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Load Dimensions"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>30_Load_Dimensions.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Load Facts"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{B642E217-0E96-4497-8D0B-BF5C7E639BA3}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Load Facts"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>40_Load_Facts.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Transform Aggregates"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{83F69FF0-6C77-42A4-A185-303AECDBF0FE}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Transform Aggregates"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>22_Transform_Aggregates_v2.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Transform Events"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{4869DDAC-37CB-4922-8B52-2BBE84984327}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Transform Events"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>21_Transform_Events.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Transform Master Data"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{782E3630-DA41-472A-BDB7-6366BA0A25B6}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Transform Master Data"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>20_Transform_MasterData.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Validate Extract"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{c233774d-941e-4018-9622-d2c0a41cb26f}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Validate Extract"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>13_Validate_Extract.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Validate Final DWH"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{E60B37D5-D0F3-406A-ADED-13110BABCCC2}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Validate Final DWH"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>50_Final_DWH_Validation.dtsx</PackageName>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\PKG - Validate Transform"
+      DTS:CreationName="Microsoft.ExecutePackageTask"
+      DTS:Description="Execute Package Task"
+      DTS:DTSID="{C43DFEFF-DD72-4D02-9EB4-BB15F529C76E}"
+      DTS:ExecutableType="Microsoft.ExecutePackageTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PKG - Validate Transform"
+      DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExecutePackageTask>
+          <UseProjectReference>True</UseProjectReference>
+          <PackageName>23_Validate_Transform.dtsx</PackageName>
+          <ParameterAssignment>
+            <ParameterName>pLoadBatchKey</ParameterName>
+            <BindedVariableOrParameterName>User::LoadBatchKey</BindedVariableOrParameterName>
+          </ParameterAssignment>
+        </ExecutePackageTask>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Complete Batch"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{DCCDBA9A-B87A-4B74-8193-7168124AFD1C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Complete Batch"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{359A8995-C9EE-4D08-8748-273225D70AB2}"
+          SQLTask:SqlStatementSource="UPDATE etl.LoadBatch&#xA;SET&#xA;    CompletedAt = SYSDATETIME()&#xA;WHERE LoadBatchKey = CONVERT(bigint, ?)&#xA;  AND LoadStatus = 'SILVER_VALIDATED'&#xA;  AND ErrorMessage IS NULL&#xA;  AND CompletedAt IS NULL;&#xA;&#xA;IF @@ROWCOUNT &lt;&gt; 1&#xA;BEGIN&#xA;    THROW 54100,&#xA;        'COMPLETE BATCH FAILED - expected exactly one active batch',&#xA;        1;&#xA;END;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::LoadBatchKey"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Reconcile Fact Load"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{9A02AC55-5B0D-40CF-B6C5-135DF74DBF6C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Reconcile Fact Load"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{359A8995-C9EE-4D08-8748-273225D70AB2}"
+          SQLTask:SqlStatementSource="DECLARE @LoadBatchKey bigint = CONVERT(bigint, ?);&#xA;&#xA;DECLARE&#xA;    @SrcParkingCapacity bigint,&#xA;    @SrcRoadSurvey      bigint,&#xA;    @SrcWeather         bigint,&#xA;    @SrcTraffic         bigint,&#xA;    @SrcParkingEvent    bigint,&#xA;&#xA;    @TgtParkingCapacity bigint,&#xA;    @TgtRoadSurvey      bigint,&#xA;    @TgtWeather         bigint,&#xA;    @TgtTraffic         bigint,&#xA;    @TgtParkingEvent    bigint;&#xA;&#xA;&#xA;/* =========================================================&#xA;   0. BATCH PHẢI ĐANG CHỜ HOÀN TẤT&#xA;   ========================================================= */&#xA;&#xA;IF NOT EXISTS&#xA;(&#xA;    SELECT 1&#xA;    FROM etl.LoadBatch&#xA;    WHERE LoadBatchKey = @LoadBatchKey&#xA;      AND LoadStatus = 'SILVER_VALIDATED'&#xA;      AND ErrorMessage IS NULL&#xA;      AND CompletedAt IS NULL&#xA;)&#xA;BEGIN&#xA;    THROW 54000,&#xA;        'RECONCILIATION FAILED - batch is not active SILVER_VALIDATED',&#xA;        1;&#xA;END;&#xA;&#xA;&#xA;/* =========================================================&#xA;   1. SOURCE EXPECTED COUNTS&#xA;   ========================================================= */&#xA;&#xA;SELECT @SrcParkingCapacity = COUNT_BIG(*)&#xA;FROM DanangSmartParkingSTG.transform.ParkingFacilityClean&#xA;WHERE LoadBatchKey = @LoadBatchKey&#xA;  AND IsValid = 1;&#xA;&#xA;&#xA;SELECT @SrcRoadSurvey = COUNT_BIG(*)&#xA;FROM DanangSmartParkingSTG.transform.RoadSurveyClean&#xA;WHERE LoadBatchKey = @LoadBatchKey&#xA;  AND IsValid = 1;&#xA;&#xA;&#xA;SELECT @SrcWeather = COUNT_BIG(*)&#xA;FROM DanangSmartParkingSTG.transform.WeatherHourlyClean&#xA;WHERE LoadBatchKey = @LoadBatchKey&#xA;  AND IsValid = 1;&#xA;&#xA;&#xA;SELECT @SrcTraffic = COUNT_BIG(*)&#xA;FROM DanangSmartParkingSTG.transform.TrafficObservationClean&#xA;WHERE LoadBatchKey = @LoadBatchKey&#xA;  AND IsValid = 1&#xA;  AND DuplicateRank = 1;&#xA;&#xA;&#xA;SELECT @SrcParkingEvent = COUNT_BIG(*)&#xA;FROM DanangSmartParkingSTG.transform.ParkingEventClean&#xA;WHERE LoadBatchKey = @LoadBatchKey&#xA;  AND IsValid = 1&#xA;  AND DuplicateRank = 1;&#xA;&#xA;&#xA;/* =========================================================&#xA;   2. BASELINE DATASET COUNTS&#xA;   ========================================================= */&#xA;&#xA;IF @SrcParkingCapacity &lt;&gt; 20&#xA;    THROW 54001,&#xA;        'RECONCILIATION FAILED - ParkingCapacity source != 20',&#xA;        1;&#xA;&#xA;IF @SrcRoadSurvey &lt;&gt; 30&#xA;    THROW 54002,&#xA;        'RECONCILIATION FAILED - RoadSurvey source != 30',&#xA;        1;&#xA;&#xA;IF @SrcWeather &lt;&gt; 168&#xA;    THROW 54003,&#xA;        'RECONCILIATION FAILED - Weather source != 168',&#xA;        1;&#xA;&#xA;IF @SrcTraffic &lt;&gt; 16800&#xA;    THROW 54004,&#xA;        'RECONCILIATION FAILED - Traffic source != 16800',&#xA;        1;&#xA;&#xA;IF @SrcParkingEvent &lt;&gt; 4283&#xA;    THROW 54005,&#xA;        'RECONCILIATION FAILED - ParkingEvent source != 4283',&#xA;        1;&#xA;&#xA;&#xA;/* =========================================================&#xA;   3. PARKING CAPACITY TARGET COVERAGE&#xA;   ========================================================= */&#xA;&#xA;SELECT @TgtParkingCapacity = COUNT_BIG(*)&#xA;FROM dwh.FactParkingCapacitySnapshot F&#xA;JOIN dwh.DimDate D&#xA;    ON D.DateKey = F.SnapshotDateKey&#xA;JOIN dwh.DimParkingFacility PF&#xA;    ON PF.ParkingFacilityKey = F.ParkingFacilityKey&#xA;WHERE D.DateValue = CONVERT(date, '2026-08-05')&#xA;  AND EXISTS&#xA;  (&#xA;      SELECT 1&#xA;      FROM DanangSmartParkingSTG.transform.ParkingFacilityClean S&#xA;      WHERE S.LoadBatchKey = @LoadBatchKey&#xA;        AND S.IsValid = 1&#xA;        AND S.ParkingID = PF.ParkingID&#xA;  );&#xA;&#xA;&#xA;/* =========================================================&#xA;   4. ROAD SURVEY TARGET COVERAGE&#xA;   ========================================================= */&#xA;&#xA;SELECT @TgtRoadSurvey = COUNT_BIG(*)&#xA;FROM dwh.FactRoadSurveySnapshot F&#xA;JOIN dwh.DimDate D&#xA;    ON D.DateKey = F.SnapshotDateKey&#xA;JOIN dwh.DimRoadSegment RS&#xA;    ON RS.SegmentKey = F.SegmentKey&#xA;WHERE D.DateValue = CONVERT(date, '2026-08-05')&#xA;  AND EXISTS&#xA;  (&#xA;      SELECT 1&#xA;      FROM DanangSmartParkingSTG.transform.RoadSurveyClean S&#xA;      WHERE S.LoadBatchKey = @LoadBatchKey&#xA;        AND S.IsValid = 1&#xA;        AND S.SegmentID = RS.SegmentID&#xA;  );&#xA;&#xA;&#xA;/* =========================================================&#xA;   5. WEATHER TARGET COVERAGE&#xA;   ========================================================= */&#xA;&#xA;SELECT @TgtWeather = COUNT_BIG(*)&#xA;FROM dwh.FactWeatherHourly F&#xA;WHERE EXISTS&#xA;(&#xA;    SELECT 1&#xA;    FROM DanangSmartParkingSTG.transform.WeatherHourlyClean S&#xA;    WHERE S.LoadBatchKey = @LoadBatchKey&#xA;      AND S.IsValid = 1&#xA;      AND S.WeatherTimestamp = F.WeatherTimestamp&#xA;);&#xA;&#xA;&#xA;/* =========================================================&#xA;   6. TRAFFIC TARGET COVERAGE&#xA;   ========================================================= */&#xA;&#xA;SELECT @TgtTraffic = COUNT_BIG(*)&#xA;FROM dwh.FactTrafficObservation F&#xA;WHERE EXISTS&#xA;(&#xA;    SELECT 1&#xA;    FROM DanangSmartParkingSTG.transform.TrafficObservationClean S&#xA;    WHERE S.LoadBatchKey = @LoadBatchKey&#xA;      AND S.IsValid = 1&#xA;      AND S.DuplicateRank = 1&#xA;      AND S.EventID = F.EventID&#xA;);&#xA;&#xA;&#xA;/* =========================================================&#xA;   7. PARKING EVENT TARGET COVERAGE&#xA;   ========================================================= */&#xA;&#xA;SELECT @TgtParkingEvent = COUNT_BIG(*)&#xA;FROM dwh.FactParkingEvent F&#xA;WHERE EXISTS&#xA;(&#xA;    SELECT 1&#xA;    FROM DanangSmartParkingSTG.transform.ParkingEventClean S&#xA;    WHERE S.LoadBatchKey = @LoadBatchKey&#xA;      AND S.IsValid = 1&#xA;      AND S.DuplicateRank = 1&#xA;      AND S.EventID = F.EventID&#xA;);&#xA;&#xA;&#xA;/* =========================================================&#xA;   8. SOURCE VS TARGET&#xA;   ========================================================= */&#xA;&#xA;IF @TgtParkingCapacity &lt;&gt; @SrcParkingCapacity&#xA;    THROW 54010,&#xA;        'RECONCILIATION FAILED - ParkingCapacity source/target mismatch',&#xA;        1;&#xA;&#xA;IF @TgtRoadSurvey &lt;&gt; @SrcRoadSurvey&#xA;    THROW 54011,&#xA;        'RECONCILIATION FAILED - RoadSurvey source/target mismatch',&#xA;        1;&#xA;&#xA;IF @TgtWeather &lt;&gt; @SrcWeather&#xA;    THROW 54012,&#xA;        'RECONCILIATION FAILED - Weather source/target mismatch',&#xA;        1;&#xA;&#xA;IF @TgtTraffic &lt;&gt; @SrcTraffic&#xA;    THROW 54013,&#xA;        'RECONCILIATION FAILED - Traffic source/target mismatch',&#xA;        1;&#xA;&#xA;IF @TgtParkingEvent &lt;&gt; @SrcParkingEvent&#xA;    THROW 54014,&#xA;        'RECONCILIATION FAILED - ParkingEvent source/target mismatch',&#xA;        1;&#xA;&#xA;&#xA;/* =========================================================&#xA;   PASS&#xA;   ========================================================= */&#xA;&#xA;PRINT 'PACKAGE 40 RECONCILIATION = PASS';&#xA;PRINT 'ParkingCapacity = 20';&#xA;PRINT 'RoadSurvey      = 30';&#xA;PRINT 'Weather         = 168';&#xA;PRINT 'Traffic         = 16800';&#xA;PRINT 'ParkingEvent    = 4283';&#xA;PRINT 'Total Facts     = 21301';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::LoadBatchKey"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL - Start Batch"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{4CBBDEC9-3A11-4EE3-BA51-22A0795238F2}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL - Start Batch"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{359A8995-C9EE-4D08-8748-273225D70AB2}"
+          SQLTask:SqlStatementSource="INSERT etl.LoadBatch&#xA;(&#xA;    SourceFolder,&#xA;    DatasetPeriodStart,&#xA;    DatasetPeriodEnd,&#xA;    LoadStatus&#xA;)&#xA;VALUES&#xA;(&#xA;    ?,&#xA;    CONVERT(date, '20260805'),&#xA;    CONVERT(date, '20260811'),&#xA;    'STARTED'&#xA;);&#xA;&#xA;SELECT CONVERT(bigint, SCOPE_IDENTITY()) AS LoadBatchKey;"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::LoadBatchKey" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Project::pRawRoot"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="130"
+            SQLTask:ParameterSize="500" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{07656C03-E3CE-4036-996C-CB55473EBC64}"
+      DTS:From="Package\SQL - Start Batch"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\PKG - Extract Master CSV" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{AD45DF0B-9B99-4823-8020-F5A54E22F5AE}"
+      DTS:From="Package\PKG - Extract Master CSV"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\PKG - Extract GeoJSON" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
+      DTS:CreationName=""
+      DTS:DTSID="{9B298AAD-D200-4516-B588-DC4816370062}"
+      DTS:From="Package\PKG - Load Facts"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 10"
+      DTS:To="Package\SQL - Reconcile Fact Load" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
+      DTS:CreationName=""
+      DTS:DTSID="{28A11B3F-1FA1-42C6-89BF-9E4B595C19C9}"
+      DTS:From="Package\SQL - Reconcile Fact Load"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 11"
+      DTS:To="Package\PKG - Validate Final DWH" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 12]"
+      DTS:CreationName=""
+      DTS:DTSID="{BE44D16E-D315-42F1-91B7-E97A950D2909}"
+      DTS:From="Package\PKG - Validate Final DWH"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 12"
+      DTS:To="Package\SQL - Complete Batch" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{770DE719-5221-47F4-816A-721C059642D8}"
+      DTS:From="Package\PKG - Extract GeoJSON"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\PKG - Extract JSONL" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{0ABD4AA1-48E5-443A-BF94-F1AE6599585B}"
+      DTS:From="Package\PKG - Extract JSONL"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\PKG - Validate Extract" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{01B0C65D-CBA5-4D7D-904C-6C5C83FE7A7F}"
+      DTS:From="Package\PKG - Validate Extract"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\PKG - Transform Master Data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
+      DTS:CreationName=""
+      DTS:DTSID="{F6C08BB4-B212-4A77-96E5-870762917F92}"
+      DTS:From="Package\PKG - Transform Master Data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 5"
+      DTS:To="Package\PKG - Transform Events" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
+      DTS:CreationName=""
+      DTS:DTSID="{057C54C4-1263-43F7-981E-892B6629F859}"
+      DTS:From="Package\PKG - Transform Events"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 6"
+      DTS:To="Package\PKG - Transform Aggregates" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
+      DTS:CreationName=""
+      DTS:DTSID="{1E466FDA-9B69-4797-A3CE-290F396AE2C5}"
+      DTS:From="Package\PKG - Transform Aggregates"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 7"
+      DTS:To="Package\PKG - Validate Transform" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
+      DTS:CreationName=""
+      DTS:DTSID="{3404F80A-8E5A-4B7E-A2C6-2C9F1D8E3304}"
+      DTS:From="Package\PKG - Validate Transform"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 8"
+      DTS:To="Package\PKG - Load Dimensions" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
+      DTS:CreationName=""
+      DTS:DTSID="{83647884-0E59-4736-96BC-DED0152EB8D4}"
+      DTS:From="Package\PKG - Load Dimensions"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 9"
+      DTS:To="Package\PKG - Load Facts" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="199,42"
+          Id="Package\PKG - Extract GeoJSON"
+          TopLeft="533,29" />
+        <NodeLayout
+          Size="184,42"
+          Id="Package\PKG - Extract JSONL"
+          TopLeft="822,31" />
+        <NodeLayout
+          Size="208,42"
+          Id="Package\PKG - Extract Master CSV"
+          TopLeft="253,31" />
+        <NodeLayout
+          Size="197,42"
+          Id="Package\PKG - Load Dimensions"
+          TopLeft="275,215" />
+        <NodeLayout
+          Size="221,42"
+          Id="Package\PKG - Transform Aggregates"
+          TopLeft="8,119" />
+        <NodeLayout
+          Size="198,42"
+          Id="Package\PKG - Transform Events"
+          TopLeft="277,119" />
+        <NodeLayout
+          Size="225,42"
+          Id="Package\PKG - Transform Master Data"
+          TopLeft="530,117" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\PKG - Validate Extract"
+          TopLeft="819,115" />
+        <NodeLayout
+          Size="205,42"
+          Id="Package\PKG - Validate Transform"
+          TopLeft="10,218" />
+        <NodeLayout
+          Size="189,42"
+          Id="Package\SQL - Complete Batch"
+          TopLeft="527,324" />
+        <NodeLayout
+          Size="165,42"
+          Id="Package\SQL - Start Batch"
+          TopLeft="11,31" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="176,52">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77,0"
+              Start="0,0"
+              End="69.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="461,51">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="72,0"
+              Start="0,0"
+              End="64.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="64.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="732,51">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="90,0"
+              Start="0,0"
+              End="82.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="82.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="913.75,73">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,42"
+              Start="0,0"
+              End="0,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="819,137">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-64,0"
+              Start="0,0"
+              End="-56.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-56.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 5]"
+          TopLeft="530,139">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-55,0"
+              Start="0,0"
+              End="-47.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-47.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 6]"
+          TopLeft="277,140">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-48,0"
+              Start="0,0"
+              End="-40.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-40.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 7]"
+          TopLeft="115.5,161">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57"
+              Start="0,0"
+              End="0,49.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 8]"
+          TopLeft="215,237.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="60,0"
+              Start="0,0"
+              End="52.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="52.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166,42"
+          Id="Package\PKG - Load Facts"
+          TopLeft="549,217" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 9]"
+          TopLeft="472,237">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="77,0"
+              Start="0,0"
+              End="69.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="69.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="211,42"
+          Id="Package\SQL - Reconcile Fact Load"
+          TopLeft="808,213" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 10]"
+          TopLeft="715,236">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="93,0"
+              Start="0,0"
+              End="85.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="85.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="208,42"
+          Id="Package\PKG - Validate Final DWH"
+          TopLeft="786,318" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 11]"
+          TopLeft="913.5,255">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-23.5,63"
+              Start="0,0"
+              End="-23.5,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.5"
+                    Point2="0,31.5"
+                    Point3="-4,31.5" />
+                  <mssgle:LineSegment
+                    End="-19.5,31.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-19.5,31.5"
+                    Point2="-23.5,31.5"
+                    Point3="-23.5,35.5" />
+                  <mssgle:LineSegment
+                    End="-23.5,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 12]"
+          TopLeft="786,342">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-70,0"
+              Start="0,0"
+              End="-62.5,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-62.5,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

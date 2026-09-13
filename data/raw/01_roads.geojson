@@ -1,0 +1,936 @@
+{
+  "type": "FeatureCollection",
+  "name": "danang_urban_core_roads_sample",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD001",
+        "road_name": "Trần Phú",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "primary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 14.0,
+        "length_km": 1.29,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.2205,
+            16.068
+          ],
+          [
+            108.222,
+            16.0565
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD002",
+        "road_name": "Bạch Đằng",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "primary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 14.5,
+        "length_km": 2.39,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.2245,
+            16.072
+          ],
+          [
+            108.225,
+            16.0505
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD003",
+        "road_name": "Nguyễn Văn Linh",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 22.0,
+        "length_km": 2.56,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.205,
+            16.06
+          ],
+          [
+            108.229,
+            16.061
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD004",
+        "road_name": "Lê Duẩn",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "primary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 15.0,
+        "length_km": 2.13,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.204,
+            16.0705
+          ],
+          [
+            108.224,
+            16.071
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD005",
+        "road_name": "Hùng Vương",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 13.0,
+        "length_km": 1.87,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.205,
+            16.0675
+          ],
+          [
+            108.2225,
+            16.068
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD006",
+        "road_name": "Ông Ích Khiêm",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 1.78,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.211,
+            16.0715
+          ],
+          [
+            108.2115,
+            16.0555
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD007",
+        "road_name": "Hải Phòng",
+        "analysis_zone": "Thanh Khê core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 1.64,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.201,
+            16.076
+          ],
+          [
+            108.215,
+            16.07
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD008",
+        "road_name": "Quang Trung",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.5,
+        "length_km": 1.17,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.213,
+            16.074
+          ],
+          [
+            108.224,
+            16.0735
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD009",
+        "road_name": "Nguyễn Chí Thanh",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 2.22,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.217,
+            16.075
+          ],
+          [
+            108.218,
+            16.055
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD010",
+        "road_name": "Phan Châu Trinh",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 2.22,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.2145,
+            16.0725
+          ],
+          [
+            108.2155,
+            16.0525
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD011",
+        "road_name": "Trần Cao Vân",
+        "analysis_zone": "Thanh Khê core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 11.0,
+        "length_km": 2.26,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.19,
+            16.078
+          ],
+          [
+            108.211,
+            16.075
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD012",
+        "road_name": "Điện Biên Phủ",
+        "analysis_zone": "Thanh Khê core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 22.0,
+        "length_km": 3.42,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.173,
+            16.0675
+          ],
+          [
+            108.205,
+            16.066
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD013",
+        "road_name": "Hàm Nghi",
+        "analysis_zone": "Thanh Khê core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 0.85,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.202,
+            16.063
+          ],
+          [
+            108.207,
+            16.057
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD014",
+        "road_name": "Hoàng Diệu",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 2.22,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.211,
+            16.066
+          ],
+          [
+            108.212,
+            16.046
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD015",
+        "road_name": "Lê Đình Lý",
+        "analysis_zone": "Thanh Khê core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 1.93,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.2,
+            16.0645
+          ],
+          [
+            108.204,
+            16.0475
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD016",
+        "road_name": "Duy Tân",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "primary",
+        "lanes": 4,
+        "speed_limit_kmh": 60,
+        "road_width_m": 16.0,
+        "length_km": 1.81,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.205,
+            16.05
+          ],
+          [
+            108.222,
+            16.0495
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD017",
+        "road_name": "2 Tháng 9",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 22.0,
+        "length_km": 3.56,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.222,
+            16.047
+          ],
+          [
+            108.224,
+            16.015
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD018",
+        "road_name": "Núi Thành",
+        "analysis_zone": "Hải Châu core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 2.35,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.216,
+            16.043
+          ],
+          [
+            108.219,
+            16.022
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD019",
+        "road_name": "Xô Viết Nghệ Tĩnh",
+        "analysis_zone": "Cẩm Lệ core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 20.0,
+        "length_km": 2.27,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.21,
+            16.028
+          ],
+          [
+            108.22,
+            16.01
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD020",
+        "road_name": "Cách Mạng Tháng 8",
+        "analysis_zone": "Cẩm Lệ core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 20.0,
+        "length_km": 2.46,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.205,
+            16.02
+          ],
+          [
+            108.215,
+            16.0
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD021",
+        "road_name": "Ngô Quyền",
+        "analysis_zone": "Sơn Trà core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 22.0,
+        "length_km": 4.44,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.238,
+            16.08
+          ],
+          [
+            108.239,
+            16.04
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD022",
+        "road_name": "Phạm Văn Đồng",
+        "analysis_zone": "Sơn Trà core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 22.0,
+        "length_km": 2.35,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.222,
+            16.073
+          ],
+          [
+            108.244,
+            16.073
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD023",
+        "road_name": "Võ Nguyên Giáp",
+        "analysis_zone": "Sơn Trà-Ngũ Hành Sơn coast",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 24.0,
+        "length_km": 8.01,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.2465,
+            16.082
+          ],
+          [
+            108.252,
+            16.01
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD024",
+        "road_name": "Hồ Nghinh",
+        "analysis_zone": "Sơn Trà core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 12.0,
+        "length_km": 2.57,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.238,
+            16.078
+          ],
+          [
+            108.241,
+            16.055
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD025",
+        "road_name": "Nguyễn Công Trứ",
+        "analysis_zone": "Sơn Trà core",
+        "road_class": "secondary",
+        "lanes": 4,
+        "speed_limit_kmh": 50,
+        "road_width_m": 11.0,
+        "length_km": 1.5,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.231,
+            16.069
+          ],
+          [
+            108.245,
+            16.068
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD026",
+        "road_name": "Nguyễn Tất Thành",
+        "analysis_zone": "Thanh Khê-Liên Chiểu coast",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 22.0,
+        "length_km": 5.95,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.205,
+            16.081
+          ],
+          [
+            108.15,
+            16.09
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD027",
+        "road_name": "Tôn Đức Thắng",
+        "analysis_zone": "Liên Chiểu core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 22.0,
+        "length_km": 4.41,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.18,
+            16.07
+          ],
+          [
+            108.14,
+            16.08
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD028",
+        "road_name": "Trường Chinh",
+        "analysis_zone": "Cẩm Lệ-Thanh Khê",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 20.0,
+        "length_km": 2.78,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.195,
+            16.045
+          ],
+          [
+            108.195,
+            16.02
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD029",
+        "road_name": "Nguyễn Hữu Thọ",
+        "analysis_zone": "Cẩm Lệ core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 20.0,
+        "length_km": 3.89,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.203,
+            16.05
+          ],
+          [
+            108.205,
+            16.015
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "road_id": "RD030",
+        "road_name": "Võ Chí Công",
+        "analysis_zone": "Ngũ Hành Sơn core",
+        "road_class": "primary",
+        "lanes": 6,
+        "speed_limit_kmh": 60,
+        "road_width_m": 22.0,
+        "length_km": 3.92,
+        "city_population_reference": 3065628,
+        "name_status": "REAL",
+        "geometry_status": "SYNTHETIC_APPROX",
+        "width_status": "SYNTHETIC_PLAUSIBLE",
+        "source_note": "Road name is real. Geometry, width, lanes and speed limit are portfolio approximations; validate against authoritative GIS before policy use."
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            108.23,
+            16.035
+          ],
+          [
+            108.235,
+            16.0
+          ]
+        ]
+      }
+    }
+  ]
+}

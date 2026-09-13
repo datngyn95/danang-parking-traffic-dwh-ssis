@@ -1,0 +1,35 @@
+{
+  "project": "Da Nang Smart Parking & Traffic Analytics - 7 day raw dataset",
+  "period": "2026-08-05 through 2026-08-11 Asia/Ho_Chi_Minh",
+  "city_population_reference": 3065628,
+  "city_area_km2_reference": 11859.59,
+  "former_danang_population_reference": 1318481,
+  "scope_note": "Traffic sample focuses on the former Da Nang urban core/corridors; current whole-city population after 2025 merger is used only as a scale/context factor.",
+  "reported_parking_context": "A 2023 Da Nang newspaper report stated about 24.8 ha of parking area, >11,000 parking positions, about 33% of planning demand to 2025. This is context only, not copied into event counts.",
+  "synthetic_model": {
+    "traffic_interval_minutes": 15,
+    "traffic_sample_roads": 25,
+    "weekday_peaks": [
+      "07:00-09:00",
+      "16:00-19:00"
+    ],
+    "parking_peaks": [
+      "11:00-14:00",
+      "16:00-19:00"
+    ],
+    "weekend_behavior": "lower CBD commute; higher coastal/tourist demand in afternoon/evening",
+    "vehicle_mix_baseline": "~66% motorbike, ~27% car, remainder bus/truck with random variation",
+    "roadside_occupancy_width": "~1.9m one side; ~3.8m both sides",
+    "data_quality_noise": "~1% null avg_speed, ~0.5% duplicate traffic rows; ~1.5% parking events without end_time and ~0.4% duplicates"
+  },
+  "sources": {
+    "population_current": "https://danang.gov.vn/w/tong-quan-ve-thanh-pho-da-nang",
+    "population_merger_context": "https://www.danang.gov.vn/vi/w/ban-chap-hanh-dang-bo-thanh-pho-a-nang-thong-nhat-e-an-hop-nhat-voi-tinh-quang-nam-va-thanh-pho-a-nang",
+    "parking_portal": "https://doxe.danang.gov.vn/",
+    "parking_restrictions": "https://opendata.danang.gov.vn/dulieuchitiet/1480973",
+    "parking_166_255": "https://baodanang.vn/day-nhanh-tien-do-dua-vao-khai-thac-cac-bai-do-xe-thong-minh-3183877.html",
+    "parking_supply_city": "https://baodanang.vn/su-dung-cac-bai-dat-trong-lam-bai-do-xe-3184313.html",
+    "weather_reference": "ChatGPT weather historical tool, Da Nang, 2026-08-05..2026-08-11"
+  },
+  "warning": "Synthetic/approximate fields are for a personal Data Engineering portfolio. They must not be presented as measured city statistics or used directly for real policy decisions."
+}

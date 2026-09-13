@@ -1,0 +1,21 @@
+﻿parking_id,parking_name,address_or_corridor,analysis_zone,capacity_spaces,parking_type,facility_status,capacity_status,coordinate_status,latitude,longitude,source_url
+PK001,Bãi đỗ xe 166 Hải Phòng,166 Hải Phòng,Thanh Khê core,273,SMART_MULTI_STOREY_PLUS_SURFACE,OPERATIONAL_REFERENCE,REAL_CAPACITY,Approximate coordinate,16.0749,108.2112,https://baodanang.vn/day-nhanh-tien-do-dua-vao-khai-thac-cac-bai-do-xe-thong-minh-3183877.html
+PK002,Bãi đỗ xe 255 Phan Châu Trinh,255 Phan Châu Trinh,Hải Châu core,124,SMART_MULTI_STOREY,OPERATIONAL_REFERENCE,REAL_CAPACITY_SUM_PHASES,Approximate coordinate,16.0595,108.2148,https://baodanang.vn/day-nhanh-tien-do-dua-vao-khai-thac-cac-bai-do-xe-thong-minh-3183877.html
+PK003,Khu đất 51A Lý Tự Trọng,51A Lý Tự Trọng,Hải Châu core,90,PLANNED_CANDIDATE,PLANNED_REFERENCE,SYNTHETIC_CAPACITY,Approximate coordinate,16.0744,108.218,https://baodanang.vn/su-dung-cac-bai-dat-trong-lam-bai-do-xe-3184313.html
+PK004,Khu đất 172 Nguyễn Chí Thanh,172 Nguyễn Chí Thanh,Hải Châu core,80,PLANNED_CANDIDATE,PLANNED_REFERENCE,SYNTHETIC_CAPACITY,Approximate coordinate,16.063,108.217,https://baodanang.vn/su-dung-cac-bai-dat-trong-lam-bai-do-xe-3184313.html
+PK005,Khu đất 9 Lê Hồng Phong,9 Lê Hồng Phong,Hải Châu core,70,PLANNED_CANDIDATE,PLANNED_REFERENCE,SYNTHETIC_CAPACITY,Approximate coordinate,16.0678,108.2187,https://baodanang.vn/su-dung-cac-bai-dat-trong-lam-bai-do-xe-3184313.html
+PK006,Khu đất 10 Lý Thường Kiệt,10 Lý Thường Kiệt,Hải Châu core,70,PLANNED_CANDIDATE,PLANNED_REFERENCE,SYNTHETIC_CAPACITY,Approximate coordinate,16.076,108.215,https://baodanang.vn/su-dung-cac-bai-dat-trong-lam-bai-do-xe-3184313.html
+PK007,A1.1 Phạm Văn Đồng - Ngô Quyền,Phạm Văn Đồng - Ngô Quyền,Sơn Trà core,120,PLANNED_CANDIDATE,PLANNED_REFERENCE,SYNTHETIC_CAPACITY,Approximate coordinate,16.073,108.239,https://baodanang.vn/su-dung-cac-bai-dat-trong-lam-bai-do-xe-3184313.html
+PK008,A1.2 Dương Đình Nghệ - Ngô Quyền,Dương Đình Nghệ - Ngô Quyền,Sơn Trà core,100,PLANNED_CANDIDATE,PLANNED_REFERENCE,SYNTHETIC_CAPACITY,Approximate coordinate,16.068,108.239,https://baodanang.vn/su-dung-cac-bai-dat-trong-lam-bai-do-xe-3184313.html
+PK009,Khu Võ Nguyên Giáp - Phan Tứ,Võ Nguyên Giáp - Phan Tứ,Sơn Trà-Ngũ Hành Sơn coast,140,PLANNED_CANDIDATE,PLANNED_REFERENCE,SYNTHETIC_CAPACITY,Approximate coordinate,16.021,108.25,https://baodanang.vn/su-dung-cac-bai-dat-trong-lam-bai-do-xe-3184313.html
+PK010,Bãi xe Chợ Cồn mô phỏng,Hùng Vương,Hải Châu core,65,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.0685,108.213,
+PK011,Bãi xe Chợ Hàn mô phỏng,Trần Phú,Hải Châu core,55,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.0683,108.2242,
+PK012,Bãi xe Ga Đà Nẵng mô phỏng,Hải Phòng,Thanh Khê core,110,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.0719,108.209,
+PK013,Bãi xe Sân bay mô phỏng,Duy Tân,Hải Châu core,180,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.048,108.201,
+PK014,Bãi xe BV Đà Nẵng mô phỏng,Quang Trung,Hải Châu core,85,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.0745,108.2168,
+PK015,Bãi xe Vincom mô phỏng,Ngô Quyền,Sơn Trà core,130,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.0718,108.2297,
+PK016,Bãi xe biển Mỹ Khê mô phỏng,Võ Nguyên Giáp,Sơn Trà-Ngũ Hành Sơn coast,160,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.054,108.2485,
+PK017,Bãi xe Công viên Biển Đông mô phỏng,Võ Nguyên Giáp,Sơn Trà-Ngũ Hành Sơn coast,100,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.07,108.2468,
+PK018,Bãi xe Lotte Mart mô phỏng,2 Tháng 9,Hải Châu core,150,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.0385,108.227,
+PK019,Bãi xe khu Nguyễn Tất Thành mô phỏng,Nguyễn Tất Thành,Thanh Khê-Liên Chiểu coast,90,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.08,108.19,
+PK020,Bãi xe khu Tôn Đức Thắng mô phỏng,Tôn Đức Thắng,Liên Chiểu core,75,SURFACE,SYNTHETIC,SYNTHETIC_CAPACITY,Synthetic location near real corridor,16.075,108.16,

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="CM_DanangSTG"
+  DTS:DTSID="{D112422F-0B51-4E1D-8748-C0277A0BF1F6}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=EC2AMAZ-8A1DACA\NEW_PROJECT;Initial Catalog=DanangSmartParkingSTG;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-00_Master-{D112422F-0B51-4E1D-8748-C0277A0BF1F6}EC2AMAZ-8A1DACA\NEW_PROJECT.DanangSmartParkingSTG;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

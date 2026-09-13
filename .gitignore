@@ -1,0 +1,15 @@
+.DS_Store
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.ispac
+*.bak
+*.mdf
+*.ldf
+*.pem
+*.key
+.env
+.env.*
+

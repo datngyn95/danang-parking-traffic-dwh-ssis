@@ -1,0 +1,14 @@
+{
+  "roads": 30,
+  "parking_locations": 20,
+  "restrictions": 18,
+  "poi": 50,
+  "road_survey": 30,
+  "traffic_events": 16884,
+  "parking_events": 4300,
+  "weather_events": 168,
+  "traffic_avg_speed_nonnull": 40.89,
+  "traffic_avg_congestion": 0.253,
+  "traffic_total_vehicle_passages": 6628928,
+  "parking_illegal_rate": 0.367
+}
